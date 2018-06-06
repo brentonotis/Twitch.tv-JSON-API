@@ -53,8 +53,6 @@ function showUsers(data) {
   offlineWindow.innerHTML += '<div class="offline-box"><div class="box-text"><div><a href="https://www.twitch.tv/' + data.display_name + '" target="_blank"><img src="' + data.logo + '"></a><div class="status-circle offline-color"></div></div><div><h3>' + data.display_name + '</h3><p>Currently Offline.</p></div></div>';
 }
 
-/* Navigation Buttons */
-
 /* Hide offline channels when online button is clicked */
 onlineBtn.addEventListener("click", hideOffline);
 function hideOffline() {
